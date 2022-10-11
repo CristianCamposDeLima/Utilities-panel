@@ -20,11 +20,33 @@ h1.salutations {
     text-shadow: 1px 1px 3px #333;
 }
 
+div.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 div.element {
-    font-size: 50px;
+    font-family: Haettenschweiler;
+    font-size: 20px;
     padding: 8px;
     margin: 10px;
     border-radius: 15px;
     box-shadow: 1px 4px 15px #000;
-    font-family: Haettenschweiler;
+}
+
+div#hours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    text-shadow: 1px 3px 1px #000;
+}
+
+div#date {
+    font-size: 18px;
+    text-shadow: 1px 2px 1px #000
+}
+
+div.day {
+    font-size: 25px;
 }

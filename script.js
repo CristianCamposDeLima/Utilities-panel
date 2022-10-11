@@ -36,5 +36,37 @@ setInterval ( ()=> {
             salutations.innerHTML = 'Boa noite!'
         }
     }
+    //data
+    const weekday = document.querySelector('div#week-day')
+    let wday = data.getDay()
+    wday = wday == 0 ? 'Domingo' : wday
+    wday = wday == 1 ? 'Segunda-feira' : wday
+    wday = wday == 2 ? 'Terça-feira' : wday
+    wday = wday == 3 ? 'Quarta-feira' : wday
+    wday = wday == 4 ? 'Quinta-feira' : wday
+    wday = wday == 5 ? 'Sexta-feira' : wday
+    wday = wday == 6 ? 'Sabado' : wday
+    weekday.innerHTML = `${wday},`
+
+    const day = document.querySelector('div#day')
+    let dd = data.getDate()
+    day.innerHTML = `${dd}`
+
+    const monthyear = document.querySelector('div#month-year')
+    let month = data.getMonth()
+    month = month == 0 ? 'Janeiro' : month
+    month = month == 1 ? 'fevereiro' : month
+    month = month == 2 ? 'março' : month
+    month = month == 3 ? 'abril' : month
+    month = month == 4 ? 'maio' : month
+    month = month == 5 ? 'Junho' : month
+    month = month == 6 ? 'Julho' : month
+    month = month == 7 ? 'agosto' : month
+    month = month == 8 ? 'setembro' : month
+    month = month == 9 ? 'outubro' : month
+    month = month == 10 ? 'novembro' : month
+    month = month == 11 ? 'dezembro' : month
+    let year = data.getFullYear()
+    monthyear.innerHTML = `de ${month} de ${year}`
 
 })
