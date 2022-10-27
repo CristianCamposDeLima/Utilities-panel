@@ -50,3 +50,6 @@ div#date {
 div.day {
     font-size: 25px;
 }
+div#weather-widget {
+    grid-column: 1/3;
+}
